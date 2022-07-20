@@ -1,0 +1,656 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./imgs/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #4a71f3;
+    padding: 5px;
+}
+nav {
+    width: 94%;
+    justify-content: space-between;
+    padding: 0px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    padding: 0;
+}
+nav h1 {
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    padding-top: 0;
+    cursor: pointer;
+} 
+nav ul li i {
+    color: white;
+    margin: 8px;
+}
+nav button {
+    background-color: #1e69;
+    color: white;
+    border: 1px solid #1e69;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+}
+.section  {
+    text-align: center;
+}
+.section img {
+    padding-top: 50px;
+}
+.section h1 {
+    color: white;
+    font-size: 60px;
+    text-transform: capitalize;
+}
+.section span {
+    text-transform: uppercase;
+}
+.section button {
+    background-color: #1e69;
+    color: white;
+    border: 1px solid #1e69;
+    border-radius: 10px;
+    padding: 10px 40px 10px 40px;
+    margin-top: 100px;
+    cursor: pointer;
+    
+}
+.section button a {
+    font-size: 20px;
+    font-style: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+.robotics {
+    width: 100%;
+    background-color: rgba(248, 248, 248, 0.6);
+    margin-bottom: 150px;
+}
+.robotics .text {
+    text-align: center;
+    margin-top: 30px;
+}
+.robotics .text h1 {
+    text-transform: capitalize;
+}
+.robotics {
+    margin-bottom: 100px;
+    padding: 20px;
+    margin-bottom: 40px;
+   
+}
+.robotics .elements {
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 100px;
+   
+   
+    
+}
+.robotics .box {
+    width: 259px;
+    height: 320px;
+    border-radius: 14px;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    background-color: white;
+    margin: 20px;
+    transition: 0.5s;
+    
+}
+.robotics .box:hover {
+    transform: translateY(-10px);
+}
+.robotics .box .im {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.robotics.box .content {
+    padding: 20px;
+  }
+.robotics .box .content h3 {
+    margin: 0;
+  }
+  .robotics .box .content p {
+    margin: 10px 0 0;
+    line-height: 1.5;
+    color: #777;
+  }
+  .robotics .box .info {
+    padding: 15px;
+    border-top: 1px solid #e6e6e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+  }
+  .robotics .box .info a {
+    color: #1E90FF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+.robotics  .information {
+    text-align: center;
+}
+.robotics  .information .text {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    line-height: 2;
+}
+.workshops {
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 100px;
+
+}
+.pictures {
+    margin-top: 40px;
+}
+.pictures .text {
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.workshops .box {
+    width: 300px;
+    height: 250px;
+    border: solid;
+    border-radius: 6px;
+   
+}
+.workshops .box img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 300px;
+    height: 200px;
+}
+.development {
+    background-color: #c0bebe;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+.development .text {
+    text-align: center;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+.development .box {
+    width: 300px;
+    height: 320px;
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: white;
+}
+.development .box:hover {
+    transform: translateY(-10px);
+}
+.development .projects {
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 100px; 
+    margin-top: 50px;
+
+}
+.development .box img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 300px;
+    height: 200px;
+}
+.development .box .content {
+    padding: 10px;
+    
+}
+.development .box .content h3 {
+    color: #1E90FF;
+}
+.development .box .link {
+    text-align: center;
+    margin-top: 0.5px;
+}
+.development .box .link button {
+    background-color: #1e69;
+    color: white;
+    border: 1px solid #1e69;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+.development .box .link button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.development .box .link button:hover {
+    background-color: #1E90FF;
+    padding: 5px 15px 5px 15px;
+}
+.development  .script {
+    text-align: center;
+}
+.development  .script  {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    line-height: 2;
+    margin-top: 50px;
+}
+.development  .script span {
+    font-weight: bold;
+}
+.development .roadmap .text {
+    text-align: center;
+}
+.development .roadmap .roads {
+    margin: 50px 0 0 100px;
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.development .roadmap .roads .boxi {
+    width: 250px;
+    height: auto;
+    background-color: white;
+    transition: 0.5s;
+    border: 1px none ;
+    border-radius: 12px;
+}
+.development .roadmap .roads .boxi img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 250px;
+    height: 200px;
+    border: 1px none ;
+    border-radius: 12px 12px 0 0;
+}
+.development .roadmap .roads .boxi h3 {
+    color: #1E90FF;
+    text-transform: capitalize;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.development .roadmap .roads .boxi p {
+    line-height: 22px;
+    padding-left: 20px;  
+    font-size: 20px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+.development .roadmap .roads .boxi:hover {
+    transform: translateY(-10px);
+}
+.development .roadmap .roads .boxi img:hover {
+    max-width: 100%;
+    max-height: 100%;
+    width: 300px;
+    height: 250px;
+}
+.courses {
+    background-color: #c0bebe;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 10px;
+}
+.courses .text {
+    text-align: center;
+    text-transform: capitalize;
+}
+.courses .robcourses {
+    margin-left: 50px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 100;
+}
+.courses .boxing {
+    width: 370px;
+    height: auto;
+    background-color: white;
+    border: 1px none ;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+.courses .boxing:hover {
+    transform: translateY(-10px);
+}
+.courses .boxing .cover img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 370px;
+    height: 200px;
+    border: 1px none;
+    border-radius: 15px 15px 0 0;
+}
+.courses .boxing .content {
+    margin-left: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.courses .boxing .content .date {
+    width: 130px;
+    border: 1px solid;
+    margin-top: 5px;
+    text-align: center;
+}
+.courses .boxing .content h3 {
+    font-weight: bold;
+    margin-top: 15px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.courses .boxing .content ul li {
+    font-size: 20px;
+    line-height: 30px;
+    list-style: none;
+}
+.courses .boxing a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.courses .boxing  #btn1 {
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: #1E90FF;
+    border: 1px solid #1E90FF;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px 0 0 10px;
+    transition: 0.5s;
+}
+.courses .boxing  #btn1:hover {
+    transform: translateX(-10px);
+}
+.courses .boxing  #btn2 {
+    background-color: rgba(4, 158, 63, 0.6);
+    border: 1px solid rgba(4, 158, 63, 0.6);
+    padding: 5px 5px 5px 5px;
+    border-radius: 0 10px 10px 0;
+    transition: 0.5s;
+}
+.courses .boxing  #btn2:hover {
+    transform: translateX(10px);
+}
+.courses .text {
+    margin-top: 50px;
+}
+.formateur {
+    background-color: white;
+    margin: 50px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3,auto);
+}
+.formateur .box {
+    width: 350px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: white;
+    padding: 10px;
+    
+}
+.formateur .box img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100px;
+    height: 100px;
+    border: 1px none;
+    border-radius: 50px;
+    margin-right: 7px;
+}
+.formateur .box .content {
+    padding-top: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.event {
+    margin-top: 50px;
+}
+.event .text {
+    text-align: center;
+    text-transform: capitalize;
+}
+.event .cover {
+    margin: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column: 100px
+
+}
+.event .cover img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 400px;
+    height: 300px;
+}
+.event .content {
+    text-transform: capitalize;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+.event .content h1 {
+    color: #1E90FF;
+    text-transform: uppercase;
+}
+.event .elements {
+    margin: 50px;
+    margin-left: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 80px;
+}
+.event .elements .box {
+    width: 200px;
+    height: 300px;
+    border: 1px none;
+    transition: 0.5s;
+}
+.event .elements .box:hover {
+    transform: translateY(-10px);
+}
+.event .elements .box img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 200px;
+    height: 250px;
+}
+.event .elements .box button {
+    background-color: rgba(5, 170, 68, 0.6);
+    border: 1px solid rgba(5, 170, 68, 0.6) ;
+    justify-content: space-between;
+    width: 200px;
+    height: 45px;
+
+}
+.event .elements .box button:hover {
+    background-color: #1E90FF;
+}
+.event .elements .box button  a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.event .elements .box button  i {
+    color: white;
+    margin-left: 20px;
+}
+.event .memories {
+    margin: 70px; 
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 50px;
+}
+.event .memories img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 350px;
+    height: 200px;
+    border: 1px none;
+    border-radius: 8px;
+}
+.limite {
+    width: 100%;
+    height: 10px;
+    background-color: #777;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.about .text {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+.about .members {
+    margin: 50px;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 50px;
+    row-gap: 60px;
+}
+.about .members .person {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    width: 400px;
+}
+.about .members .person img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50px;
+}
+.about .members .person h1 {
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+.about .members .person p {
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.about .defenition {
+    width: 80%;
+    margin: 10%;
+    border: 1px ;
+    height: auto;
+    padding: 20px;
+}
+.about .defenition h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.about .defenition p {
+    text-transform: capitalize;
+    line-height: 40px;
+    font-size: 20px;
+}
+.about .defenition img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 400px;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.about .defenition .cover {
+    text-align: center;
+    margin-top: 40px;
+}
+.contact .text {
+    text-align: center;
+    text-transform: capitalize;
+}
+.contact .elements {
+    margin: 50px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 40px;
+}
+.contact .method {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 400px;
+}
+.contact .method img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100px;
+    height: 100px;
+}
+.contact .method h1 {
+    text-transform: uppercase;
+    color: #1778F2;
+}
+.contact .method p {
+    text-transform: capitalize;
+    line-height: 30px;
+}
+.footer {
+    background-color: rgb(44, 42, 42);
+    width: 100%;
+    height: auto;
+    padding: 50px 0 0px 200px;
+}
+.footer .box {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.footer .box .line {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 300px;
+    color: white;
+    margin-bottom: 40px;
+}
+.footer p {
+      text-align: center;
+      color: white;
+      margin-right: 300px;
+      text-transform: capitalize;
+}
